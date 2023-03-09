@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Persegi Panjang</title>
+
+    <style>
+        body  {
+          background-image: url("image/bg_img.jpg");
+        }
+    </style>
+
     <script type="text/javascript">
 
                     document.write("<h1 align='center'>Menghitung luas dan keliling Persegi Panjang</h1>");
@@ -26,11 +33,46 @@
 </head>
 <body>
           <form>
-               <p>Panjang : <input type="number" id="panjang"></p>
+            <table>
+                <tr>
+                    <td>Panjang</td>
+                    <td>:</td>
+                    <td><input type="number" id="panjang"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Lebar</td>
+                        <td>:</td>
+                        <td><input type="number" id="lebar"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="Hitung" onclick="hitungLuasKeliling();"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Luas</td>
+                        <td>=</td>
+                        <td><input type="text" id="luas"></td>
+                    </tr> 
+
+                    <tr>
+                        <td>Keliling</td>
+                        <td>=</td>
+                        <td><input type="text" id="keliling"></td>
+                    </tr> 
+
+                
+
+
+                
+               <!-- <p>Panjang : <input type="number" id="panjang"></p>
                <p>Lebar   : <input type="number" id="lebar"></p>
                <p><input type="button" value="Hitung" onclick="hitungLuasKeliling();"> </p>
                Luas :     <input type="text" id="luas">
-               Keliling : <input type="text" id="keliling">
+               Keliling : <input type="text" id="keliling"> -->
+
+            </table>
           </form>
      </body>
 

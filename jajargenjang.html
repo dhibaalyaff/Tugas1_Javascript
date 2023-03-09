@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Jajar Genjang</title>
+</head>
+
+<style>
+    body  {
+      background-image: url("image/bg_img.jpg");
+    }
+</style>
+
+
+<body>
+    <script>
+        document.write("<h1 align='center'>Menghitung luas dan Keliling Jajargenjang</h1>");
+        document.write("<hr/>");
+
+        var luas;
+        var keliling;
+        var alas;
+        var tinggi;
+        var sisiMiring;
+        function hitung() {
+        alas = parseFloat(document.getElementById("ipt_alas").value);
+        tinggi = parseFloat(document.getElementById("ipt_tinggi").value);
+        luas = alas * tinggi;
+        sisiMiring = 3/4 * alas;
+        keliling = 2 * (alas + sisiMiring);
+        document.getElementById('opt_luas').value = luas;
+        document.getElementById('opt_keliling').value = keliling;
+        }
+    </script>
+
+<div>
+
+    <table>
+    <thead>
+        <tr>
+            <th>Jajar Genjang</th>
+        </tr>
+    </thead>
+
+        <tbody>
+        <tr>
+            <td>Masukan alas</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="ipt_alas"></td>
+        </tr>
+        
+        <tr>
+            <td>Masukan tinggi</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="ipt_tinggi"></td>
+        </tr>
+        <tr>
+            <td><button onclick="hitung()">Hitung</button></td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <td>Luas jajar genjang</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="opt_luas" ></td>
+        </tr>
+        <tr>
+            <td>Keliling jajar genjang</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="opt_keliling"></td>
+        </tr>
+        </tfoot>
+
+ </table>
+</div>
+
+</body>
+</html>
