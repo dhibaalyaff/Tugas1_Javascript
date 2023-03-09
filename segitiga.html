@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segitiga</title>
+</head>
+
+<body>
+
+    <script type='text/javascript'>
+
+        document.write("<h1 align='center'>Menghitung luas dan keliling Persegi Panjang</h1>");
+        document.write("<hr/>");
+
+        function hitungluas(){
+        var alas = document.forms['hitungls']['alass'].value;
+        alas = parseInt(alas);
+        var tinggi = document.forms['hitungls']['tinggis'].value;
+        tinggi = parseInt(tinggi);
+        var luas = (alas*tinggi)/2;
+        document.forms['hitungls']['luass'].value = luas;
+        }
+    </script>
+
+<body>
+<form name='hitungls' method='post'>
+    <table>
+    <tr>
+    <td>Alas</td>
+    <td>:</td>
+    <td><input type='number' name='alass' onchange='hitungluas();'></td>
+    </tr>
+
+    <tr>
+    <td>Tinggi</td>
+    <td>:</td>
+    <td><input type='number' name='tinggis' onchange='hitungluas();'></td>
+    </tr>
+
+    <tr>
+    <td><input type="button" value="Hitung" onclick="hitungluas();"></td>
+    </tr>
+
+    <tr>
+    <td>Luas</td>
+    <td>:</td>
+    <td> <input type='text' name='luass' onchange='hitungluas();'></td>
+    </tr>
+    </table>
+    </form>
+</body>
+
+</html>
