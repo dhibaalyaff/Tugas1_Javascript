@@ -1,2 +1,4 @@
 # Tugas1_Javascript
-Rincian tugas   1. Buatlah Rumus Matematika bangun ruang menggunakan JavaScript  2. Bangun ruang sebagai berikut, persegi panjang, jajar genjang, segitiga
+Rincian tugas   
+1. Buatlah Rumus Matematika bangun ruang menggunakan JavaScript  
+2. Bangun ruang sebagai berikut, persegi panjang, jajar genjang, segitiga
